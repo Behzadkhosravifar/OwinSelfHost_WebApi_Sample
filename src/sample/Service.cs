@@ -6,7 +6,7 @@ using NLog;
 using Topshelf;
 using Topshelf.Runtime;
 
-namespace NewsletterService
+namespace Sample
 {
     internal class Service
     {
@@ -25,15 +25,18 @@ namespace NewsletterService
 
         public bool Start(HostControl hostControl)
         {
+            // src: http://www.ascii-art-generator.org/
             var header = @"
     
-    #     #                                                              
-    ##    # ###### #    #  ####  #      ###### ##### ##### ###### #####  
-    # #   # #      #    # #      #      #        #     #   #      #    # 
-    #  #  # #####  #    #  ####  #      #####    #     #   #####  #    # 
-    #   # # #      # ## #      # #      #        #     #   #      #####  
-    #    ## #      ##  ## #    # #      #        #     #   #      #   #  
-    #     # ###### #    #  ####  ###### ######   #     #   ###### #    #                                                                           
+      #####                                     
+     #     #   ##   #    # #####  #      ###### 
+     #        #  #  ##  ## #    # #      #      
+      #####  #    # # ## # #    # #      #####  
+           # ###### #    # #####  #      #      
+     #     # #    # #    # #      #      #      
+      #####  #    # #    # #      ###### ######                                                                 
+
+
             ";
 
             _logger.Info(header);

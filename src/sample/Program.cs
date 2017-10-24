@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using Topshelf;
 
-namespace NewsletterService
+namespace Sample
 {
     class Program
     {
@@ -11,9 +11,9 @@ namespace NewsletterService
             {
                 var version = Assembly.GetEntryAssembly().GetName().Version.ToString(3);
                 configurator.UseNLog();
-                configurator.SetDisplayName($"Newsletter Service v{version}");
-                configurator.SetDescription($"Newsletter Service v{version}, create newsletter content and manage user and data.");
-                configurator.SetServiceName("NewsletterService");
+                configurator.SetDisplayName($"Sample Service v{version}");
+                configurator.SetDescription($"Sample Service v{version}, desc... .");
+                configurator.SetServiceName("Sample");
 
                 configurator.Service<Service>(serviceConfigurator =>
                 {

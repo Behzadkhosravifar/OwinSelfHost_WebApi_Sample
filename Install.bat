@@ -1,1 +1,1 @@
-%cd%\src\output\NewsletterService.exe install start
+%cd%\src\output\Sample.exe install start

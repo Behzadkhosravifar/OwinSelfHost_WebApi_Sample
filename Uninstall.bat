@@ -26,6 +26,6 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-sc stop "newsletterservice"
-sc delete "newsletterservice"
+sc stop "sample"
+sc delete "sample"
 pause

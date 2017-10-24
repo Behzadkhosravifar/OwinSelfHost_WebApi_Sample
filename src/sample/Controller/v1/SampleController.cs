@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
 
-namespace NewsletterService.Controller.v1
+namespace Sample.Controller.v1
 {
-    public class NewsletterController : BaseController
+    public class SampleController : BaseController
     {
-        // GET ~/api/v1/Newsletter/get
+        // GET ~/api/v1/Sample/get
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };

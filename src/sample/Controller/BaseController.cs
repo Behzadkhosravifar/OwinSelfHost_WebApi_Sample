@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
 using NLog;
 
-namespace NewsletterService.Controller
+namespace Sample.Controller
 {
     public class BaseController : ApiController
     {

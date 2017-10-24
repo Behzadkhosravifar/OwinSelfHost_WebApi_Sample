@@ -1,11 +1,11 @@
 ﻿using System.Web.Http;
 using Microsoft.Owin;
-using NewsletterService;
 using NLog.Owin.Logging;
 using Owin;
+using Sample;
 
 [assembly: OwinStartup(typeof(Startup))]
-namespace NewsletterService
+namespace Sample
 {
     public class Startup
     {
